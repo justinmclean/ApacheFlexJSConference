@@ -1,0 +1,49 @@
+{{ "<!-- ABOUT -->" | safeHTML }}
+<section class="bg-primary" id="schedule">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-push-1 text-center">
+                <h2 class="section-heading">Schedule</h2>
+                <hr class="light">
+
+                <p class="text-faded" style="text-align:center;">
+                    The schedule will be posted once we have evaluated all the talks.<br />
+                    <br />
+                    <b>Deadline for talk submissions:</b> <b>February 11, 2017</b><br />
+                    <b>Accepted talks notification:</b> <b>March 6, 2017</b><br />
+                    <b>Schedule Published:</b> <b>March 9, 2017</b><br />
+                    <br />
+                    On that note, <a href="#get-involved" target="_blank">submit a talk</a>... 
+                </p>
+                
+                <!--
+                <p class="text-faded">
+                    The schedule is as follows.
+                </p>
+                <p class="text-faded">
+                    The below times are in the EST (GMT-5) timezone.<br />
+                    The current EDT time is: <span id="current-time" style="color:white;"></span>
+                </p>
+                <div class="row">
+                    <div class="col-xs-12" style="color:white; margin-top:10px; margin-bottom:10px;">Day, date</div> 
+                    <div class="col-xs-12 col-md-3 text-faded" style="text-align:left; clear:both;">time</div>
+                    <div class="col-xs-11 col-xs-push-1 col-md-9 col-md-push-0 text-faded">title</div>
+                    <div class="col-xs-12 col-md-3 text-faded" style="text-align:left; clear:both;">time</div>
+                    <div class="col-xs-11 col-xs-push-1 col-md-9 col-md-push-0 text-faded">title
+                    <br>description</div>
+                 </div>
+                -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    setInterval(function() { 
+        offset = -4.0 //EDT
+        client_date = new Date();
+        utc = client_date.getTime() + (client_date.getTimezoneOffset() * 60000);
+        server_date = new Date(utc + (3600000*offset));
+        $('#current-time').html(server_date.toLocaleString());
+    }, 1000);
+</script>
