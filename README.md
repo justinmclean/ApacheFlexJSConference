@@ -1,4 +1,4 @@
-# FlexJS conferance website
+# FlexJS conference website
 
 Based on the original ca.cloudstackcollab.org website thanks!
 
