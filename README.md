@@ -4,10 +4,10 @@ Based on the original ca.cloudstackcollab.org website thanks!
 
 ### run locally
 
-using gohugo framework.
+using go hugo framework.
 
 ```
-hugo server --buildDrafts
+hugo server
 ```
 
 and view in http://localhost:1313
