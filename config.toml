@@ -1,4 +1,4 @@
-baseurl = "http://us.apacheflexjs.org/"
+baseurl = "/"
 languageCode = "en-us"
 title = "Apache FlexJS Conference - Miami, USA"
 theme = "hugo-creative-theme"
